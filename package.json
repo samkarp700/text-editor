@@ -4,22 +4,24 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
     "start:dev": "concurrently \"cd server && npm run server \" \"cd client && npm run dev\"",
     "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client", 
     "build": "cd client && npm run build", 
-    "install": "",
     "client": "cd client && npm start"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samkarp700/text-editor.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4"
+  "bugs": {
+    "url": "https://github.com/samkarp700/text-editor/issues"
   },
-  "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+  "homepage": "https://github.com/samkarp700/text-editor#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
   }
 }
