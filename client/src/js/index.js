@@ -35,3 +35,7 @@ if ('serviceWorker' in navigator) {
   console.error('Service workers are not supported in this browser.');
 }
 
+window.addEventListener('load', function() {
+  initdb();
+  this.document.getElementById('icon').src = Logo;
+})

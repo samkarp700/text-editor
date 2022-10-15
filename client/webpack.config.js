@@ -23,7 +23,7 @@ module.exports = () => {
       //workbox plugins
       new InjectManifest({
         swSrc: './src-sw.js', 
-        swDest: './src-sw.js'
+        swDest: 'src-sw.js'
       }), 
       new WebpackPwaManifest({
         name: 'Just Another Text Editor', 
@@ -39,12 +39,12 @@ module.exports = () => {
           sizes: [96, 128, 192, 256, 384, 512],
           destination: path.join('assets', 'icons'),
         },
-        {
-        src: path.resolve('src/images/logo.png'),
-        size: '1024x1024',
-        destination: path.join('assets', 'icons'),
-        purpose: 'maskable'
-        }
+        // {
+        // src: path.resolve('src/images/logo.png'),
+        // size: '1024x1024',
+        // destination: path.join('assets', 'icons'),
+        // purpose: 'maskable'
+        // }
       ],
       }),
     ],
