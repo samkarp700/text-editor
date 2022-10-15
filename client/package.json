@@ -1,9 +1,5 @@
 {
   "name": "jate",
-  "version": "1.0.0",
-  "private": "true",
-  "keywords": [],
-  "description": "",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
