@@ -1,4 +1,4 @@
-import { initdb } from './database';
+import { initdb } from './database'; //is this needed? 
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
 
