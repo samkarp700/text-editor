@@ -1,20 +1,21 @@
 {
-  "name": "JATE",
+  "name": "jate",
   "version": "1.0.0",
   "description": "",
   "private": "true",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server \" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client", 
-    "build": "cd client && npm run build", 
-    "client": "cd client && npm start", 
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start",
     "install": "concurrently \"cd client && npm install\" \"cd server && npm install\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samkarp700/text-editor.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/samkarp700/text-editor#readme",
   "dependencies": {
-    "concurrently": "^7.4.0"
-  }
+    "concurrently": "^7.4.0",
+    "nodemon": "2.0.20"
+  },
+  "main": "index.js",
+  "devDependencies": {}
 }
