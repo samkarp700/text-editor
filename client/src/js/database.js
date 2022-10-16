@@ -27,7 +27,7 @@ export const putDb = async (content) => {
   // open desired object store
   const store = tx.objectStore('jate');
   //create .put() method to update specific object in db
-  const request = store.put({ id: 1, value: content });
+  const request = store.add({ content });
   //results
   const result = await request;
     console.log('data saved to database', result);
@@ -43,7 +43,7 @@ export const getDb = async () => {
   //open up the desired object store
   const store = tx.objectStore('jate');
   //use the .getAll() method
-  const request = store.getAll();
+  const request = store.get(1);
   //confirmation of request
   const result = await request;
   console.log('result.value', result);
