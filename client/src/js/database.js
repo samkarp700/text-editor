@@ -17,7 +17,7 @@ export const initdb = async () =>
   });
 
 // Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (id, content) => {
+export const putDb = async (content) => {
   console.log('put to the database', id);
 
   //create connection to indexeddb
