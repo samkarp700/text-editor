@@ -1,7 +1,7 @@
 import { openDB } from 'idb';
 import 'regenerator-runtime/runtime';
 
-export const initdb = async () =>
+const initdb = async () =>
 //new db called jate, version 1
   openDB('jate', 1, {
     //add db schema if not already initilized
