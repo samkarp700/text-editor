@@ -1,1 +1,1 @@
-# text-editor
+# Just Another Text Editor 'J.A.T.E'
