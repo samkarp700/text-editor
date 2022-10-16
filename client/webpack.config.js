@@ -19,6 +19,7 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'JATE',
+        inject: true,
       }), 
       //workbox plugins
       new InjectManifest({
@@ -29,8 +30,8 @@ module.exports = () => {
         name: 'Just Another Text Editor', 
         short_name: 'JATE', 
         description: 'Create and save code snippets reliably!',
-        background_color: '#225ca3', 
-        theme_color: '#225ca3', 
+        background_color: '#333333', 
+        theme_color: '#333333', 
         start_url: './',
         publicPath: './',
         inject: true,
